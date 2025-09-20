@@ -1,16 +1,12 @@
 import React, { useState } from "react";
 
 function App() {
-  // Danh sách các màu
   const colors = ["red", "yellow", "aqua", "purple"];
 
-  // Màu đang được chọn
   const [activeColor, setActiveColor] = useState(null);
 
-  // Hàm xử lý khi click
   const handleClick = (color) => {
     if (activeColor === color) {
-      // Nếu bấm lại cùng màu thì reset
       setActiveColor(null);
     } else {
       setActiveColor(color);
